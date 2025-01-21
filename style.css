@@ -10,6 +10,22 @@ body {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    position: relative;
+}
+
+.watermark {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 10px; 
+    color: #ffffff; 
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap; 
+    user-select: none; 
+    pointer-events: none; 
 }
 
 h2 {
@@ -81,7 +97,5 @@ h2 {
 
 @keyframes glow {
     0% { box-shadow: 0 0 5px #6A0DAD; }
-    100% { box-shadow: 0 0 20px #A855F7; } 
+    100% { box-shadow: 0 0 20px #A855F7; }
 }
-
-
